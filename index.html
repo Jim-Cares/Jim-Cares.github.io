@@ -27,20 +27,25 @@ window.onload = function() {
     var people = ['Donald Trump', 'Mike Pence', 'Rex Tillerson', 
     'James Mattis', 'Jeff Sessions', 'Ryan Zinke', 'Ben Carson',
     'Elaine Chao', 'Rick Perry', 'Betsy DeVos', 'Reince Priebus',
-    'Steve Bannon', 'Kellyanne Conway', 'Sean Spicer', 'Paul Ryan'];
+    'Steve Bannon', 'Kellyanne Conway', 'Sean Spicer', 'Paul Ryan',
+    'Hilary Clinton', 'Bernie Sanders', 'Chris Christie', 'Justin Trudeau',
+    'Meryll Streep', 'Goku', 'Elon Musk',
+    '8 People', 'Kanye West'];
 
     var person = people[Math.floor(Math.random() * people.length)];
 
-    var actions = ['Tweeted That They Will', 'Launched a New Program to', 
-    'Refused to', 'Proposed a Bill to', 'Blogged That They Will',
-    'Threatened to', 'Told the Media They Will', 'Sang That They Will'];
+    var actions = ['Tweeted that They Will', 'Launched a New Program to', 
+    'Refused to', 'Proposed a Bill to', 'Demanded an Executive Order to',
+    'Threatened to', 'Told the Media They Will', 
+    'Leaked Information that They Might', 'Plans to', 'Wants to', 
+    'Pretends not to', 'Supports Actions to', 'Intends to'];
 
     var action = actions[Math.floor(Math.random() * actions.length)];
 
     var triggers = ['Empower', 'Ban', 'Remove Legislation That Protects',
     'Abolish Laws Concerning', 'Bridge the Divide With', 'Convert',
     'Defuse the Conflict With', 'Conspire With', 'Increase Taxes for',
-    'Save', 'Scrutinize', 'Work Against'];
+    'Save', 'Scrutinize', 'Work Against', 'Break Ties With'];
   
     var trigger = triggers[Math.floor(Math.random() * triggers.length)];
 
@@ -50,13 +55,37 @@ window.onload = function() {
     'Perl Coders', 'Left-Handed People', 'Metalheads', 'Molluscs',
     'Pandas', 'Pineapple-on-Pizza Lovers', 'Pokemon Trainers', 'Ravers', 
     'Red-Haired Individuals', 'Scuba Divers', 'Senior Citizens', 
-    'Social Media Gurus', 'Socialists', 'Gym Teachers'];
+    'Social Media Gurus', 'Socialists', 'Gym Teachers', 
+    'Erik Langert and Known Associates', 
+    'Angsty Teens', 'Endangered Species', 'Overworked Zookepers',
+    'Laundry Detergent Branding Managers', 'Vegan Butchers',
+    'Unemployed College Graduates', 'Alternative Polka Artists', 
+    'Youtubers', 'Injured Chess Players', 'Regex Enthusiasts', 
+    'People who go to but do not Finish Hackathons', 'Bastions on Attack'];
 
     var victim = victims[Math.floor(Math.random() * victims.length)];
 
+    var countries = ['Madagascar', 'Canada', 'Peru', 'Djibouti', 'Barbados',
+    'West Virginia', 'New Jersey', 'Alabama', 'Paraguay', 'Beaverlick, KY',
+    'Portland, OR', 'France', 'Europe', 'New Zealand', 'Florida',
+    'Suburban Areas', 'Brazil', 'Local County Fair'];
+  
+    var country = countries[Math.floor(Math.random() * countries.length)];
+
+    var sentences = [ 'Will ' +person +' ' +trigger +' ' +victim +'?',
+    'Can ' +person +' ' +trigger +' ' +victim +' from ' +country +'?',
+    'Should' +person +' ' +trigger +' ' +victim +' Found in ' +country +'?',
+    person +' ' +action +' ' +trigger +' ' +victim +'!',
+    'Unnamed Sources Claim that ' +person +' ' +action +' ' +trigger +' '
+      +victim +'!',
+    victim + ' from ' +country +': Will ' +person +' ' +trigger +' them?',
+    'People from ' +country +' ' +action +' ' +trigger +' ' +victim +'.'
+    ];
+
+    var sentence = sentences[Math.floor(Math.random() * sentences.length)];
+
     document.getElementById("breaking").innerHTML = 'BREAKING NEWS!';
-    document.getElementById("headline").innerHTML = person + ' ' + action + ' ' 
-      + trigger + ' ' + victim + '.';
+    document.getElementById("headline").innerHTML = sentence;
     return false;
   }
 }
