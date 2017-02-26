@@ -2,13 +2,13 @@
 <html>
   <head>
     <title>Jim Cares</title>
-    
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <!--import minified jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <!--materialize compiled and minified CSS--> 
+    <!--materialize compiled and minified CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 
     <!--let browser know website is optimized for mobile-->
@@ -23,8 +23,8 @@ window.onload = function() {
   var a = document.getElementById("newsgenerator");
 
   a.onclick = function() {
-    
-    var people = ['Donald Trump', 'Mike Pence', 'Rex Tillerson', 
+
+    var people = ['Donald Trump', 'Mike Pence', 'Rex Tillerson',
     'James Mattis', 'Jeff Sessions', 'Ryan Zinke', 'Ben Carson',
     'Elaine Chao', 'Rick Perry', 'Betsy DeVos', 'Reince Priebus',
     'Steve Bannon', 'Kellyanne Conway', 'Sean Spicer', 'Paul Ryan',
@@ -33,10 +33,10 @@ window.onload = function() {
 
     var person = people[Math.floor(Math.random() * people.length)];
 
-    var actions = ['Tweeted that They Will', 'Launched a New Program to', 
+    var actions = ['Tweeted that They Will', 'Launched a New Program to',
     'Refused to', 'Proposed a Bill to', 'Demanded an Executive Order to',
-    'Threatened to', 'Told the Media They Will', 
-    'Leaked Information that They Might', 'Plans to', 'Wants to', 
+    'Threatened to', 'Told the Media They Will',
+    'Leaked Information that They Might', 'Plans to', 'Wants to',
     'Pretends not to', 'Supports Actions to', 'Intends to'];
 
     var action = actions[Math.floor(Math.random() * actions.length)];
@@ -45,30 +45,30 @@ window.onload = function() {
     'Abolish Laws Concerning', 'Bridge the Divide With', 'Convert',
     'Defuse the Conflict With', 'Conspire With', 'Increase Taxes for',
     'Save', 'Scrutinize', 'Work Against', 'Break Ties With'];
-  
+
     var trigger = triggers[Math.floor(Math.random() * triggers.length)];
 
     var victims = ['Astronauts', 'Breakfast Cereal Mascots', 'Cosplayers',
-    'Crossfitters', 'Extraterrestrial Life Forms', 'Gamers', 
+    'Crossfitters', 'Extraterrestrial Life Forms', 'Gamers',
     "People who Claim to be Gluten-Sensitive but Aren't", 'Hackers',
     'Perl Coders', 'Left-Handed People', 'Metalheads', 'Molluscs',
-    'Pandas', 'Pineapple-on-Pizza Lovers', 'Pokemon Trainers', 'Ravers', 
-    'Red-Haired Individuals', 'Scuba Divers', 'Senior Citizens', 
-    'Social Media Gurus', 'Socialists', 'Gym Teachers', 
-    'Erik Langert and Known Associates', 
+    'Pandas', 'Pineapple-on-Pizza Lovers', 'Pokemon Trainers', 'Ravers',
+    'Red-Haired Individuals', 'Scuba Divers', 'Senior Citizens',
+    'Social Media Gurus', 'Socialists', 'Gym Teachers',
+    'Erik Langert and Known Associates',
     'Angsty Teens', 'Endangered Species', 'Overworked Zookeepers',
     'Laundry Detergent Branding Managers', 'Vegan Butchers',
-    'Unemployed College Graduates', 'Alternative Polka Artists', 
-    'Youtubers', 'Injured Chess Players', 'Regex Enthusiasts', 
-    'People who go to but do not Finish Hackathons', 'Bastions on Attack'];
+    'Unemployed College Graduates', 'Alternative Polka Artists',
+    'Youtubers', 'Injured Chess Players', 'Regex Enthusiasts',
+    'People who Attend but do not Finish Hackathons', 'Bastions on Attack'];
 
     var victim = victims[Math.floor(Math.random() * victims.length)];
 
     var countries = ['Madagascar', 'Canada', 'Peru', 'Djibouti', 'Barbados',
     'West Virginia', 'New Jersey', 'Alabama', 'Paraguay', 'Beaverlick, KY',
     'Portland, OR', 'France', 'Europe', 'New Zealand', 'Florida',
-    'Suburban Area', 'Brazil', 'Local County Fair'];
-  
+    'a Suburban Area', 'Brazil', 'Local County Fair'];
+
     var country = countries[Math.floor(Math.random() * countries.length)];
 
     var sentences = [ 'Will ' +person +' ' +trigger +' ' +victim +'?',
@@ -104,7 +104,7 @@ window.onload = function() {
     of Jim Bomysoad. He is running for President of the United States of
     America in the year 2020. Why should you vote for Jim, you say? Because Jim
     Cares! As Jim himself has said,
-    
+
     <blockquote class="flow-text blue-text">
     I care for the people of this country and want to do right by them
     everyday. We need to work together for liberty and justice. Under my
@@ -113,7 +113,7 @@ window.onload = function() {
     </blockquote>
     </p>
     </div>
-  
+
 
     <div class="section red white-text">
       <h2 class="center">Jim's Plan of Action</h2>
@@ -139,11 +139,11 @@ window.onload = function() {
     </p>
 
     <div class="center">
-      <a id="newsgenerator" 
+      <a id="newsgenerator"
         class="waves-effect waves-light center btn-large red">
       Generate News!</a>
     </div>
-    
+
     <div class="container grey lighten-4 center">
       <h5 id="breaking"></h5>
       <h4 id="headline"></h2>
@@ -152,14 +152,14 @@ window.onload = function() {
     <p class="flow-text">
     How enraging! Jim proposes to combat these issues with
     his campaign of care. If Jim cares, other people will care too!</p>
-    
+
     <img class="responsive-img" src="images/flag.jpg">
 
     <div class="section" id="govt">
       <h2 class="center red-text">Modernize the Government</h2>
-      
+
       <ul class="collection flow-text">
-        
+
         <li class="collection-item">
           <div class="row valign-wrapper">
             <div class="col s2">
@@ -167,8 +167,8 @@ window.onload = function() {
             </div>
             <div class="col s10">
             <h5 class="red-text">Secretary of Spicy Memes</h5>
-            <p>World-renowned memer Erik will modernize the government 
-            by providing guidance and authority on the spicyness of all the 
+            <p>World-renowned memer Erik will modernize the government
+            by providing guidance and authority on the spicyness of all the
             memes.</p>
             </div>
           </div>
@@ -232,7 +232,7 @@ window.onload = function() {
           </div>
         </li>
       </ul>
-    
+
     </div>
 
     <div class="section center">
@@ -247,7 +247,7 @@ window.onload = function() {
 
     <div class="section">
     <div class="row">
-      
+
       <div class="col s12 m6">
         <div class="card">
           <div class="card-image">
@@ -257,9 +257,9 @@ window.onload = function() {
             <span class="blue-text">Literacy</span>
             <p>All kittens should learn to read stories about how amazing
             kittens are.
-            </p> 
+            </p>
           </div>
-        </div> 
+        </div>
       </div>
 
       <div class="col s12 m6">
@@ -269,11 +269,11 @@ window.onload = function() {
           </div>
           <div class="card-content flow-text">
             <span class="blue-text">Vacation Time</span>
-            <p>Kittens should be allowed to rest as much as is necessary for 
+            <p>Kittens should be allowed to rest as much as is necessary for
             them to enjoy their lives.
-            </p> 
+            </p>
           </div>
-        </div> 
+        </div>
       </div>
 
       <div class="col s12 m6">
@@ -286,9 +286,9 @@ window.onload = function() {
             <p>Kittens deserve all the food they desire; anyone who
             interferes with the kittens' food will be met with hard punishment
             and loud meows.
-            </p> 
+            </p>
           </div>
-        </div> 
+        </div>
       </div>
 
       <div class="col s12 m6">
@@ -300,12 +300,12 @@ window.onload = function() {
             <span class="blue-text">Computer Skills</span>
             <p>Kittens need to know how to code in order to compete in today's
             workplace. Jim recommends that they learn concatenative languages.
-            </p> 
+            </p>
           </div>
-        </div> 
+        </div>
       </div>
 
-    </div>  
+    </div>
     </div>
 
 
