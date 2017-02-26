@@ -17,6 +17,52 @@
     <!--personalized stylesheet-->
     <!--link rel="stylesheet" type="text/css" href="style.css"-->
 
+    <script type="text/javascript">
+
+window.onload = function() {
+  var a = document.getElementById("newsgenerator");
+
+  a.onclick = function() {
+    
+    var people = ['Donald Trump', 'Mike Pence', 'Rex Tillerson', 
+    'James Mattis', 'Jeff Sessions', 'Ryan Zinke', 'Ben Carson',
+    'Elaine Chao', 'Rick Perry', 'Betsy DeVos', 'Reince Priebus',
+    'Steve Bannon', 'Kellyanne Conway', 'Sean Spicer', 'Paul Ryan'];
+
+    var person = people[Math.floor(Math.random() * people.length)];
+
+    var actions = ['Tweeted That They Will', 'Launched a New Program to', 
+    'Refused to', 'Proposed a Bill to', 'Blogged That They Will',
+    'Threatened to', 'Told the Media They Will', 'Sang That They Will'];
+
+    var action = actions[Math.floor(Math.random() * actions.length)];
+
+    var triggers = ['Empower', 'Ban', 'Remove Legislation That Protects',
+    'Abolish Laws Concerning', 'Bridge the Divide With', 'Convert',
+    'Defuse the Conflict With', 'Conspire With', 'Increase Taxes for',
+    'Save', 'Scrutinize', 'Work Against'];
+  
+    var trigger = triggers[Math.floor(Math.random() * triggers.length)];
+
+    var victims = ['Astronauts', 'Breakfast Cereal Mascots', 'Cosplayers',
+    'Crossfitters', 'Extraterrestrial Life Forms', 'Gamers', 
+    "People who Claim to be Gluten-Sensitive but Aren't", 'Hackers',
+    'Perl Coders', 'Left-Handed People', 'Metalheads', 'Molluscs',
+    'Pandas', 'Pineapple-on-Pizza Lovers', 'Pokemon Trainers', 'Ravers', 
+    'Red-Haired Individuals', 'Scuba Divers', 'Senior Citizens', 
+    'Social Media Gurus', 'Socialists', 'Gym Teachers'];
+
+    var victim = victims[Math.floor(Math.random() * victims.length)];
+
+    document.getElementById("breaking").innerHTML = 'BREAKING NEWS!';
+    document.getElementById("headline").innerHTML = person + ' ' + action + ' ' 
+      + trigger + ' ' + victim + '.';
+    return false;
+  }
+}
+    </script>
+
+
   </head>
 
   <body>
@@ -65,10 +111,16 @@
     </p>
 
     <div class="center">
-    <a id="newsgen" class="waves-effect waves-light center btn-large red">
+      <a id="newsgenerator" 
+        class="waves-effect waves-light center btn-large red">
       Generate News!</a>
     </div>
     
+    <div class="container grey lighten-4 center">
+      <h5 id="breaking"></h5>
+      <h4 id="headline"></h2>
+    </div>
+
     <p class="flow-text">
     How enraging! Jim proposes to combat these issues with
     his campaign of care. If Jim cares, other people will care too!</p>
