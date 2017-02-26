@@ -3,6 +3,7 @@ cure
 energize
 flush
 empower
+triggers
 overcome
 Undo
 ban
